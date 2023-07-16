@@ -25,7 +25,7 @@ jobs:
         run: |
           date=$(date +%Y-%m-%d)
           echo -e "\nDate: $date" >> commit_message.txt
-          git add commit_message.txt
+          git add -f commit_message.txt  # Force-add the file
           git commit -m "Update commit message with date"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
