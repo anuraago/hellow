@@ -1,0 +1,18 @@
+Hej,
+
+I am writing to apply for the position of WEB Developer at HIQ. With a degree in Computer Science and practical experience in full stack development, including working with two startups, I am confident in my ability to contribute to the success of your team.
+
+Having worked with large-scale software systems for a couple of years, I am well-versed in JavaScript, particularly React, Typescript and working with REST APIs. I am comfortable receiving feedback and thrive on personal and team growth. Building cool stuff and constantly pushing boundaries drives my passion for software development.
+
+My expertise include deploying and scaling systems using tools like Vagrant and Docker. I have hands-on experience with CI/CD automation and have worked with cloud-based solutions, particularly Google Cloud Platform (GCP).
+
+What sets me apart is my enthusiasm for UI/UX design and frontend development. I enjoy creating visually appealing and user-friendly designs and systems.
+
+I am excited about the opportunity to join HIQ and contribute to its innovative projects. I am confident that my technical skills, adaptability, and curiosity align well with the requirements of the position.
+
+Thank you for considering my application. I would be delighted to talk about how my abilities and expertise can help your team in an interview.
+
+Thank you for your time and consideration.
+
+Warm Regards,
+Anurag Deore.
