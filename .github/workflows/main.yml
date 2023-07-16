@@ -1,0 +1,29 @@
+name: Log Commit Message
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  log_commit_message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set git user
+        run: |
+          git config --global user.name "anuraago"
+          git config --global user.email "anuore125@gmail.com"
+
+      - name: Log commit message
+        run: |
+          commit_message=$(git log -1 --pretty=%B)
+          echo "$commit_message" >> abc.txt
+          git add abc.txt
+          git commit -m "Update abc.txt with commit message" --no-verify
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
