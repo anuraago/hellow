@@ -16,11 +16,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set git user
+        run: |
+          git config --global user.name "anuraago"
+          git config --global user.email "anuore125@gmail.com"
+
       - name: Set commit date
         run: |
           date=$(date +%Y-%m-%d)
           git log -1 --pretty=%B > commit_message.txt
           echo -e "\nDate: $date" >> commit_message.txt
-          cat commit_message.txt | git commit -F -
+          git commit -F commit_message.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
